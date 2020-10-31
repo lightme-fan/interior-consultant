@@ -1,0 +1,15 @@
+@import './variables/variables';
+@import './variables/mixin';
+
+.interior {
+    @include default;
+}
+
+.interior--container {
+    max-width: 1114px;
+    margin: auto;
+}
+
+.interior--main {
+    margin-top: 45px;
+}

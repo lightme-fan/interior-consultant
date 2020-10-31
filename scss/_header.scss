@@ -1,0 +1,37 @@
+@import './variables/variables';
+@import './variables/mixin';
+
+.interior--header {
+    @include displayFlex;
+    position: relative;
+}
+
+.interior--header-text {
+    margin: $margin;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 16px;
+    text-transform: $textTransform;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    box-sizing: border-box;
+}
+
+.interior--details {
+    align-self: $alignSelf;
+    position: absolute;
+    left: 84%;
+    top: 10px;
+}
+
+.interior--details[open] {
+    height: 500px;
+} 
+
+.interior--details-summary::-webkit-details-marker {
+    display: none;
+}
+
+.interior--details-menu {
+    @include list;
+}

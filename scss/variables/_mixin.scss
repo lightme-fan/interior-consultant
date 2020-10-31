@@ -1,0 +1,15 @@
+
+@mixin default($background: #181719, $color: #ffffff) {
+    background-color: $background;
+    color: $color;
+}
+
+@mixin displayFlex($display: flex, $justifyContent: space-between) {
+    display: $display;
+    justify-content: $justifyContent;
+}
+
+@mixin list {
+    list-style: none;
+    padding: 0
+}

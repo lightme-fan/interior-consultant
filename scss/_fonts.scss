@@ -1,0 +1,14 @@
+@import 'variables/font-faces';
+
+// Looping the fonts
+@each $font in $fonts {
+  @font-face {
+    font-family: map-get($font, 'family');
+    font-weight: map-get($font, 'weight');
+    font-style: map-get($font, 'style');
+    src: local(map-get($font, 'family')),
+      local(map-get($font, 'local')),  
+      url('../fonts/#{map-get($font, "filename")}.woff2') format("woff2"),
+      url('../fonts/#{map-get($font, "filename")}.woff') format("woff");
+  }
+}

@@ -1,7 +1,44 @@
+@font-face {
+  font-family: "crimson_proextralight_italic";
+  font-weight: 400;
+  font-style: normal;
+  src: local("crimson_proextralight_italic"), local("crimson_proextralight_italic"), url("../fonts/crimsonpro-italic-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/crimsonpro-italic-variablefont_wght-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "crimson_proextralight";
+  font-weight: 400;
+  font-style: normal;
+  src: local("crimson_proextralight"), local("crimson_proextralight"), url("../fonts/crimsonpro-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/crimsonpro-variablefont_wght-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "loraitalic";
+  font-weight: 400;
+  font-style: normal;
+  src: local("loraitalic"), local("loraitalic"), url("../fonts/lora-italic-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/lora-italic-variablefont_wght-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "loraregular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("loraregular"), local("loraregular"), url("../fonts/lora-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/lora-variablefont_wght-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "montserratbold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("montserratbold"), local("montserratbold"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "montserratregular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("montserratregular"), local("montserratregular"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff"); }
+
 .interior {
   background-color: #181719;
   color: #ffffff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: 'montserratregular'; }
 
 .interior--container {
   max-width: 1114px;
@@ -18,8 +55,9 @@
 .interior--header-text {
   margin: 0;
   padding: 8px;
-  font-size: 14px;
+  font-family: 'crimson_proextralight';
   font-weight: 200;
+  font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
   border: 1px solid rgba(225, 225, 225, 0.5);
@@ -120,6 +158,7 @@ input[type="checkbox"]:checked ~ .interior--header .label_menu {
   margin-bottom: 26px; }
 
 .interior--modern-heading {
+  font-family: 'loraregular';
   font-size: 36px;
   line-height: 46px; }
 
@@ -168,9 +207,11 @@ input[type="checkbox"]:checked ~ .interior--header .label_menu {
 
 .interior--design-date {
   grid-area: date;
+  font-family: 'loraregular';
   font-size: 24px;
   line-height: 31px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 0; }
 
 .interior--designer-profile-desc_name {
   font-weight: 500;

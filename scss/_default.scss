@@ -1,9 +1,11 @@
 @import './variables/variables';
 @import './variables/mixin';
+@import './variables/font-faces';
 
 .interior {
     @include default;
     overflow-x: hidden;
+    font-family: 'montserratregular';
 }
 
 .interior--container {

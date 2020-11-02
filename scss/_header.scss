@@ -1,5 +1,6 @@
 @import './variables/variables';
 @import './variables/mixin';
+@import 'variables/font-faces';
 
 .interior--header {
     @include displayFlex;
@@ -9,8 +10,9 @@
 .interior--header-text {
     margin: $margin;
     padding: 8px;
-    font-size: 14px;
+    font-family: 'crimson_proextralight';
     font-weight: 200;
+    font-size: 14px;
     line-height: 16px;
     text-transform: $textTransform;
     border: 1px solid rgba(225, 225, 225, 0.5);

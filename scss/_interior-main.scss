@@ -1,0 +1,83 @@
+@import './variables/variables';
+@import './variables/mixin';
+
+.interior--modern {
+    margin-bottom: 26px
+}
+
+.interior--modern-heading {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.interior--modern-content {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 40px;
+    margin-bottom: 48px;
+    opacity: 0.9
+}
+
+.interior--modern-more-content {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.interior--design-photo {
+    width: $defaultWidth;
+}
+
+.interior--mask {
+    position: relative;
+}
+
+.interior--designer {
+    width: 75%;
+    height: 138px;
+    transform: translate(15%, -67px);
+    @include default;
+    position: absolute;
+    padding: 10px;
+    // top: 135px;
+    left: 3%;;
+}
+
+.interior--designer-profile {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-areas: 'photo description'
+                        'date date'
+}
+
+.interior--designer-profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: $borderRadaius;
+    grid-area: photo;
+}
+
+.interior--designer-profile-desc {
+    grid-area: description;
+}
+
+.interior--design-date {
+    grid-area: date;
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+}
+
+.interior--designer-profile-desc_name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.interior--designer-profile-desc_job {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}

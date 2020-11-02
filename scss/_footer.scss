@@ -1,0 +1,13 @@
+@import './variables/variables';
+@import './variables/mixin';
+
+.interior--footer {
+    margin-top: 208px;
+}
+
+.interior--footer-devChallenge {
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    padding-top: 1rem;
+    margin: 1rem;
+}

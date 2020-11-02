@@ -3,6 +3,7 @@
 
 .interior {
     @include default;
+    overflow-x: hidden;
 }
 
 .interior--container {

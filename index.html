@@ -8,25 +8,29 @@
   </head>
   <body class="interior">
     <div class="interior--container">
+      <input type="checkbox" class="menu_checkbox" id="input_checkbox">
+
       <header class="interior--header">
-        <h1 class="interior--header-text">This interior</h1>    
-        <details class="interior--details">
-          <summary class="interior--details-summary">Menu</summary>
-          <ul class="interior--details-menu">
-            <li class="interior--details-menu-list">
-              <a class="interior--details-menu-list-link" href="/">Home</a>
-            </li>
-            <li class="interior--details-menu-list">
-              <a class="interior--details-menu-list-link" href="/collection">Collection</a>
-            </li>
-            <li class="interior--details-menu-list">
-              <a class="interior--details-menu-list-link" href="/about">About</a>
-            </li>
-            <li class="interior--details-menu-list">
-              <a class="interior--details-menu-list-link" href="/contact">Contact</a>
-            </li>
-          </ul>
-        </details>
+        <h1 class="interior--header-text">This interior</h1>  
+
+        <label for="input_checkbox" class="label_menu">
+          <span class="interior_open_menu">Open menu</span>
+        </label>
+
+        <ul class="interior--menu">
+          <li class="interior--menu-list">
+            <a class="interior--menu-list-link" href="/">Home</a>
+          </li>
+          <li class="interior--menu-list">
+            <a class="interior--menu-list-link" href="/collection">Collection</a>
+          </li>
+          <li class="interior--menu-list">
+            <a class="interior--menu-list-link" href="/about">About</a>
+          </li>
+          <li class="interior--menu-list">
+            <a class="interior--menu-list-link" href="/contact">Contact</a>
+          </li>
+        </ul>
       </header>
 
       <main class="interior--main">
@@ -46,11 +50,12 @@
             <div class="interior--designer">
               <div class="interior--designer-profile">
                 <img class="interior--designer-profile-photo" src="./imges/photo2.png" alt="Designer profile">
-                <span class="interior--designer-profile-name">Aliza Webber</span>
-                <span class="interior--designer-profile-job">Interior designer</span>
+                <div class="interior--designer-profile-desc">
+                <span class="interior--designer-profile-desc_name">Aliza Webber</span><br/>
+                <span class="interior--designer-profile-desc_job">Interior designer</span>
               </div>
               <p class="interior--design-date">
-                Designed in 2020 by Aliza Webber
+                Designed in 2020 by <br/> Aliza Webber
               </p>
             </div>
           </section>

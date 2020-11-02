@@ -1,6 +1,7 @@
 .interior {
   background-color: #181719;
-  color: #ffffff; }
+  color: #ffffff;
+  overflow-x: hidden; }
 
 .interior--container {
   max-width: 1114px;
@@ -24,18 +25,153 @@
   border: 1px solid rgba(225, 225, 225, 0.5);
   box-sizing: border-box; }
 
-.interior--details {
-  align-self: center;
+.interior--summary:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  left: 84%;
-  top: 10px; }
+  background-image: url("../icons/menu.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.interior--details[open] {
-  height: 500px; }
+.interior--summary:focus {
+  outline: none;
+  cursor: pointer; }
 
-.interior--details-summary::-webkit-details-marker {
-  display: none; }
+.label_menu {
+  position: absolute;
+  left: 80%;
+  background-image: url("../icons/menu.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  background-size: auto;
+  cursor: pointer; }
 
-.interior--details-menu {
+.interior_open_menu {
+  color: transparent; }
+
+.menu_checkbox {
+  visibility: hidden; }
+
+input[type="checkbox"]:checked ~ .interior--header .interior--menu {
+  transform: translateX(0%); }
+
+input[type="checkbox"]:checked ~ .interior--menu {
+  z-index: 1; }
+
+input[type="checkbox"]:checked ~ .interior--header .interior--menu {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  background-color: #181719;
+  color: #ffffff;
+  height: 872px;
+  margin: 0;
+  margin-top: -1rem;
+  padding-top: 6rem; }
+
+input[type="checkbox"]:checked ~ .interior--header .label_menu {
+  position: absolute;
+  z-index: 2;
+  background-image: url("../icons/x-icon.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 23px;
+  color: white; }
+
+.interior--menu {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  position: absolute;
+  left: 200%; }
+
+.interior--menu-list {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.interior--menu-list-link {
+  text-decoration: none;
+  color: #ffffff; }
+
+.interior--modern {
+  margin-bottom: 26px; }
+
+.interior--modern-heading {
+  font-size: 36px;
+  line-height: 46px; }
+
+.interior--modern-content {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  opacity: 0.9; }
+
+.interior--modern-more-content {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px; }
+
+.interior--design-photo {
+  width: 100%; }
+
+.interior--mask {
+  position: relative; }
+
+.interior--designer {
+  width: 75%;
+  height: 138px;
+  transform: translate(15%, -67px);
+  background-color: #181719;
+  color: #ffffff;
+  position: absolute;
+  padding: 10px;
+  left: 3%; }
+
+.interior--designer-profile {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-areas: 'photo description' 'date date'; }
+
+.interior--designer-profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  grid-area: photo; }
+
+.interior--designer-profile-desc {
+  grid-area: description; }
+
+.interior--design-date {
+  grid-area: date;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700; }
+
+.interior--designer-profile-desc_name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px; }
+
+.interior--designer-profile-desc_job {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282; }
+
+.interior--footer {
+  margin-top: 208px; }
+
+.interior--footer-devChallenge {
+  border-top: 1px solid #ffffff;
+  text-align: center;
+  padding-top: 1rem;
+  margin: 1rem; }

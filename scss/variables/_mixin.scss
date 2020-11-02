@@ -13,3 +13,17 @@
     list-style: none;
     padding: 0
 }
+
+@mixin background($imgPath, $position:50% 50%, $repeat: no-repeat, $size: cover) {
+    background: {
+        image: url($imgPath);
+        position: $position;
+        repeat: $repeat;
+        size: $size
+    }
+}
+  
+@mixin anchorText($textDecoration: none, $color: #ffffff) {
+    text-decoration: $textDecoration;
+    color: $color;
+}

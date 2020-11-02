@@ -17,21 +17,79 @@
     box-sizing: border-box;
 }
 
-.interior--details {
-    align-self: $alignSelf;
+.interior--summary:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    left: 84%;
-    top: 10px;
+    @include background('../icons/menu.svg')
 }
 
-.interior--details[open] {
-    height: 500px;
-} 
-
-.interior--details-summary::-webkit-details-marker {
-    display: none;
+.interior--summary:focus {
+    outline: $outline;
+    cursor: $cursor;
 }
 
-.interior--details-menu {
+.label_menu {
+    position: absolute;
+    left: 80%;
+    // color: transparent;
+    @include background('../icons/menu.svg');
+    background-position: 100%;
+    background-size: auto;
+    cursor: pointer;
+}
+
+.interior_open_menu {
+    color: transparent;
+}
+
+.menu_checkbox {
+    visibility: $visibility;
+}
+  
+input[type="checkbox"]:checked ~ .interior--header .interior--menu {
+    transform: translateX(0%);
+}
+
+input[type="checkbox"]:checked ~ .interior--menu {
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked ~ .interior--header .interior--menu {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    @include default;
+    height: 872px;
+    margin: 0;
+    margin-top: -1rem;
+    padding-top: 6rem;
+}
+
+input[type="checkbox"]:checked ~ .interior--header .label_menu {
+    position: absolute;
+    z-index: 2;
+    @include background('../icons/x-icon.svg');
+    background-size: 23px;
+    color: white;
+}
+
+.interior--menu {
     @include list;
+    position: absolute;
+    left: 200%;
+    
+}
+
+.interior--menu-list {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.interior--menu-list-link {
+    @include anchorText;
 }

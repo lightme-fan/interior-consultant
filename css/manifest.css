@@ -41,8 +41,6 @@
   cursor: pointer; }
 
 .label_menu {
-  position: absolute;
-  left: 80%;
   background-image: url("../icons/menu.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -71,13 +69,12 @@ input[type="checkbox"]:checked ~ .interior--header .interior--menu {
   width: 100%;
   background-color: #181719;
   color: #ffffff;
-  height: 872px;
+  height: 945px;
   margin: 0;
   margin-top: -1rem;
   padding-top: 6rem; }
 
 input[type="checkbox"]:checked ~ .interior--header .label_menu {
-  position: absolute;
   z-index: 2;
   background-image: url("../icons/x-icon.svg");
   background-position: 50% 50%;
@@ -98,7 +95,26 @@ input[type="checkbox"]:checked ~ .interior--header .label_menu {
 
 .interior--menu-list-link {
   text-decoration: none;
-  color: #ffffff; }
+  color: #ffffff;
+  opacity: 0.7; }
+
+.interior--menu-list:nth-of-type(1) .interior--menu-list-link {
+  opacity: 1; }
+
+@media (min-width: 900px) {
+  .label_menu {
+    display: none; }
+  .interior--menu {
+    position: unset;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center; }
+  .interior--menu-list {
+    padding: 0;
+    padding-right: 86px; }
+  .interior--menu-list:nth-of-type(4) {
+    padding-right: 0; } }
 
 .interior--modern {
   margin-bottom: 26px; }
@@ -167,11 +183,30 @@ input[type="checkbox"]:checked ~ .interior--header .label_menu {
   line-height: 15px;
   color: #828282; }
 
+@media (min-width: 900px) {
+  .interior--main-container {
+    display: grid;
+    grid-template-columns: 410px 1fr;
+    gap: 87px; }
+  .interior--modern-content {
+    padding-right: 3rem; }
+  .interior--designer {
+    left: 7%; } }
+
 .interior--footer {
   margin-top: 208px; }
 
 .interior--footer-devChallenge {
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #A9A9A9;
+  color: #A9A9A9;
   text-align: center;
   padding-top: 1rem;
   margin: 1rem; }
+
+@media (min-width: 900px) {
+  .interior--footer {
+    margin-top: 180px; }
+  .interior--footer-devChallenge {
+    border-top: none;
+    padding: 0;
+    margin: 0; } }

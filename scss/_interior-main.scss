@@ -81,3 +81,19 @@
     line-height: 15px;
     color: #828282;
 }
+
+@media (min-width: 900px) {
+    .interior--main-container {
+        display: grid;
+        grid-template-columns: 410px 1fr;
+        gap: 87px;
+    }
+
+    .interior--modern-content {
+        padding-right: 3rem;
+    }
+
+    .interior--designer {
+        left: 7%;
+    }
+}

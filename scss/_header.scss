@@ -32,8 +32,6 @@
 }
 
 .label_menu {
-    position: absolute;
-    left: 80%;
     // color: transparent;
     @include background('../icons/menu.svg');
     background-position: 100%;
@@ -64,14 +62,13 @@ input[type="checkbox"]:checked ~ .interior--header .interior--menu {
     z-index: 1;
     width: 100%;
     @include default;
-    height: 872px;
+    height: 945px;
     margin: 0;
     margin-top: -1rem;
     padding-top: 6rem;
 }
 
 input[type="checkbox"]:checked ~ .interior--header .label_menu {
-    position: absolute;
     z-index: 2;
     @include background('../icons/x-icon.svg');
     background-size: 23px;
@@ -92,4 +89,32 @@ input[type="checkbox"]:checked ~ .interior--header .label_menu {
 
 .interior--menu-list-link {
     @include anchorText;
+    opacity: 0.7;
+}
+
+.interior--menu-list:nth-of-type(1) .interior--menu-list-link {
+    opacity: 1;
+}
+
+@media (min-width: 900px) {
+    .label_menu {
+        display: none;
+    }
+
+    .interior--menu {
+        position: unset;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
+
+    .interior--menu-list {
+        padding: 0;
+        padding-right: 86px;
+    }
+
+    .interior--menu-list:nth-of-type(4) {
+        padding-right: 0;
+    }
 }

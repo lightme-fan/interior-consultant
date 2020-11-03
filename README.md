@@ -1,38 +1,14 @@
-# Responsive Challenge : Interior Consultant
+# Responsive Challenge 
 
-Challenge: Create a homepage following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:
-
-![image](./interior1.png)
-![image](./interior2.png)
-
--   User story: I can see a page following the given design
--   User story: On mobile, I can see a collapsed navigation
--   User story: On mobile, when I select the hamburger menu, I can see a navigation
--   Technical requirement : use **BEM** notation with **SASS** to practice your skills
-
-Icon: https://google.github.io/material-design-icons/
-
-[Check the design link here](https://www.figma.com/file/3cf83hHRBAGjG5EKPcG2bV)
-
-As long as you fulfill all the user stories, you can give your personal touches by adding transition, using your own images, changing colors, or even creating your own layout,...
-
-Once you completed, submit your solutions by providing URLs for both GitHub repository and live app on Netlify and explain briefly what you have done.
-
-Good luck everybody!
-
-Template for your readme :
-
-<!-- Please update value in the {}  -->
-
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Interior Consultant</h1>
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://lightme-fan-interior-consultant.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/lightme-fan/interior-consultant">
       Solution
     </a>
   </h3>
@@ -53,22 +29,25 @@ Template for your readme :
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./screenshot.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+-   You can see my demo by clicking this [link](https://lightme-fan-interior-consultant.netlify.app/)
 
--   Where can I see your demo?
--   What was your experience?
--   What have you learned/improved?
--   Your wisdom? :)
+-   In this project, I use sass compelling.
+
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
--   [React](https://reactjs.org/)
+-   This project is built with [sass](https://sass-lang.com/documentation/syntax)
 
 ## Features
+
+- I have an index.html file.
+- I also have scss folder which contains a variable folder and six sass files. Inside of the variables folder, there are three files, which are variables, font-face and mixin.
+
+- I as well have css folder which contains manifest.css. Everything inside of this file is from sass.
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
@@ -80,7 +59,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/lightme-fan/interior-consultant
 
 # Install dependencies
 $ npm install
@@ -95,6 +74,6 @@ $ npm start
 
 ## Contact
 
--   Website [your-website.com](https://{your-web-site-link})
--   GitHub [@your-username](https://{github.com/your-usermame})
--   Twitter [@your-twitter](https://{twitter.com/your-username})
+-   Website: [Responsive challenge: interior consultant](https://lightme-fan-interior-consultant.netlify.app/})
+-   GitHub: [lightme-fan](https://github.com/lightme-fan)
+-   Twitter [Fanilo](https://twitter.com/Fanilo85066531)
